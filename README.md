@@ -70,7 +70,7 @@ At 42 School, it is expected that almost every project is written in accordance 
 <a href="https://github.com/jotavare/jotavare/blob/main/42/pdf/en_norm.pdf">Click here</a> for more information on 42 norms.
 
 ## TESTERS
-* [So_long Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator
+* [So_long Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator)
 
 ## LICENSE
 <p>
