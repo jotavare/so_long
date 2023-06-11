@@ -15,8 +15,7 @@
 <p align="center">
 	<a href="#about">About</a> •
 	<a href="#how-to-use">How to use</a> •
-	<a href="#disclaimer">Disclaimer</a> •
-	<a href="#testers">Testers</a> •
+	<a href="#norminette">Norminette</a> •
 	<a href="#license">License</a>
 </p>
 
@@ -27,15 +26,15 @@ It is created using the minilibx library and requires students to implement game
 <a href="https://github.com/jotavare/libft/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-#### COMPILE
+#### COMPILATION AND EXECUTION
 #### 1º - Clone the repository
 ```bash
 git clone git@github.com:jotavare/so_long.git
 ```
 #### 2º - Enter the project folder and run `make` or `make bonus`
 ```bash
-cd so_long\so_long
-make (bonus)
+cd so_long/so_long
+make or make bonus
 ```
 #### 3º - Run the game with a map of your choice
 ```bash
@@ -46,31 +45,30 @@ make (bonus)
 
 `make` - Compile so_long.
 
-``make bonus`` - Compile so_long_bonus.
+`make bonus` - Compile so_long_bonus.
 
-``make all`` - Compile all.
+`make all`  - Compile mandatory + bonus.
 
-``make clean`` - Delete all .o (object files) files.
+`make clean`  - Delete all .o (object files) files.
 
-``make fclean`` - Delete all .o (object files) and .a (executable) files.
+`make fclean`  - Delete all .o (object files) and .a (executable) files.
 
-``make re`` - use rules `fclean` + `all`
+`make re` - use rules `fclean` + `all`.
 
-## DISCLAIMER
+## NORMINETTE
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
-```bash
-- No for, do while, switch, case or goto are allowed
-- No more than 25 lines per function and 5 functions per file
+```
+- No for, do...while, switch, case, goto, ternary operators and variable lenght arrays are allowed
+- Each function must be maximum 25 lines, not counting the function's own curly brackets
+- Each line must be at most 80 columns wide, comments included
+- A function can take 4 named parameters maximum
 - No assigns and declarations in the same line (unless static)
-- No more than 5 variables in 1 function
+- You can't declare more than 5 variables per function
 - ...
 ```
 
 <a href="https://github.com/jotavare/jotavare/blob/main/42/pdf/en_norm.pdf">Click here</a> for more information on 42 norms.
-
-## TESTERS
-* [So_long Map Validator](https://github.com/Nuno-Jesus/so_long_map_validator)
 
 ## LICENSE
 <p>
