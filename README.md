@@ -23,7 +23,7 @@
 The so_long project is a 2D game where the player navigates through a maze-like environment, avoiding obstacles and enemies to reach a goal.
 It is created using the minilibx library and requires students to implement game mechanics, file input/output, and basic graphics.
 
-<a href="https://github.com/jotavare/libft/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
+<a href="https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
 #### COMPILATION AND EXECUTION
