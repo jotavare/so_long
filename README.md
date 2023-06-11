@@ -36,11 +36,13 @@ git clone git@github.com:jotavare/so_long.git
 cd so_long/so_long
 make or make bonus
 ```
+
 #### 3º - Run the game with a map of your choice
 ```bash
 ./so_long maps/valid/mandatory/medium.ber
 ./so_long_bonus maps/valid/bonus/medium.ber
 ```
+
 #### MAKEFILE RULES
 
 `make` - Compile so_long.
