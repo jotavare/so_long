@@ -76,8 +76,9 @@ make or make bonus
 * The use of the imagges of the MiniLibx is mandatory.
 
 #### MAP
-The map should include 3 components to be constructed: walls, collectibles and free space.
-Should be composed of only these 5 characters:
+* The map should include 3 components to be constructed: walls, collectibles and free space.
+
+* Should be composed of only these 5 characters:
 * `0` - Empty space.
 * `1` - Wall.
 * `C` - Collectible.
