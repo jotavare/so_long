@@ -57,6 +57,39 @@ make or make bonus
 
 `make re` - use rules `fclean` + `all`.
 
+## MANDATORY
+* Must use MiniLibX.
+* Makefile should not relink.
+* The program has to take a map description file ending with `.ber` extension.
+
+#### GAME
+* Goal: collect every collectible and escape chosing the shortest route.
+* `W` `A` `S` `D` keys must be used to move the main character `up` `down` `left` `right`.
+* Cant move into walls.
+* Number of movements must be displayed in the shell.
+* Must be 2D view and doesnt need to be real time.
+
+#### GRAPHIC MANAGMENT
+* Display the image in a window and must remain smooth.
+* Pressing `ESC` must close the window and quite the program in a clean way.
+* Clicking on the windows cross should do the same behavior as `ESC`.
+* The use of the imagges of the MiniLibx is mandatory.
+
+#### MAP
+The map should include 3 components to be constructed: walls, collectibles and free space.
+Should be composed of only these 5 characters:
+* `0` - Empty space.
+* `1` - Wall.
+* `C` - Collectible.
+* `E` - Map exit.
+* `P` - Player starting position.
+
+## BONUS
+* Develop original extra features (optional).
+* Make the player lose when they touch an enemy patrol.
+* Add sprite animation.
+* Display the movement count directly on screen, instead of writing in the shell.
+
 ## NORMINETTE
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
 
