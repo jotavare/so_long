@@ -42,8 +42,8 @@ make or make bonus
 
 #### 3º - Run the game with a map of your choice
 ```bash
-./so_long maps/valid/mandatory/medium.ber
-./so_long_bonus maps/valid/bonus/medium.ber
+./so_long [map.ber]
+./so_long_bonus [map_bonus.ber]
 ```
 
 #### MAKEFILE RULES
