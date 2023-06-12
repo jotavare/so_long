@@ -93,10 +93,10 @@ make or make bonus
 111111111111
 ```
 * Map must be rectangular.
-* Map must be closed/surrounded by walls. If not, the program should return and error.
+* Map must be closed/surrounded by walls. If not, the program should return an error.
 * Check if there is a valid path in the map.
 * The program must be able to parse any kind of map, as long it respects the rules.
-* If a error/misconfiguration is encountered, it should return "Error\n" followed by a message.
+* If a error/misconfiguration is encountered, it should return `Error\n` followed by a message.
 
 ## BONUS
 * Develop original extra features (optional).
