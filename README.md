@@ -66,21 +66,22 @@ make or make bonus
 - [x] The program has to take as parameter a map description file ending with `.ber` extension.
 
 #### GAME
-* **Goal:** collect every collectible and escape chosing the shortest route.
-* `W` `A` `S` `D` keys must be used to move the main character `up` `down` `left` `right`.
-* Can't move into walls.
-* Number of movements must be displayed in the shell.
-* Must be 2D view and doesnt need to be real time.
+- [x] **Goal:** collect every collectible and escape chosing the shortest route.
+- [x] `W`, `A`, `S` and `D` keys must be used to move the main character `up`, `down`, `left` and `right`.
+- [x] Can't move into walls.
+- [x] Number of movements must be displayed in the shell.
+- [x] Must be 2D view (top-down or profile).
+- [x] Doesn't need to be real time.
 
 #### GRAPHIC MANAGMENT
-* Display the image in a window and must remain smooth.
-* Pressing `ESC` must close the window and quit the program in a clean way.
-* Clicking on the window cross should do the same behavior as `ESC`.
-* The use of the images of the MiniLibx is mandatory.
+- [x] Display the image in a window and must remain smooth (changing windows, minimizing, ...).
+- [x] Pressing `ESC` must close the window and quit the program in a clean way.
+- [x] Clicking on the window cross must also close and quit the program in a clean way.
+- [x] The use of the images of the MiniLibx is mandatory.
 
 #### MAP
-* The map should include 3 components to be constructed: walls, collectibles and free space.
-* Should be composed of only these 5 characters:
+- [x] The map should include 3 components to be constructed: walls, collectibles and free space.
+- [x] Should be composed of only these 5 characters:
 
 | Characters | Description |
 | :--: | :--: |
@@ -90,13 +91,14 @@ make or make bonus
 | `E` | Map exit.                 |
 | `P` | Player starting position. |
 
-* The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
-* Map must be rectangular.
-* Map must be closed/surrounded by walls. If not, the program should return an error.
-* Check if there is a valid path in the map.
-* The program must be able to parse any kind of map, as long it respects the rules.
-* If a error/misconfiguration is encountered, it should return `Error\n` followed by a message.
+- [x] The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
+- [x] Map must be rectangular.
+- [x] Map must be closed/surrounded by walls. If not, the program should return an error.
+- [x] Check if there is a valid path in the map.
+- [x] The program must be able to parse any kind of map, as long it respects the rules.
+- [x] If a error/misconfiguration is encountered, it should return `Error\n` followed by an explicit message.
 
+Map `.ber` example:
 ```
 111111111111
 1001000000C1
@@ -106,10 +108,10 @@ make or make bonus
 ```
 
 ## BONUS
-* Develop original extra features (optional).
-* Make the player lose when they touch an enemy patrol.
-* Add sprite animation.
-* Display the movement count directly on screen, instead of writing in the shell.
+- [x] Develop original extra features (optional).
+- [x] Make the player lose when they touch an enemy patrol.
+- [x] Add sprite animation.
+- [x] Display the movement count directly on screen, instead of writing in the shell.
 
 ## NORMINETTE
 At 42 School, it is expected that almost every project is written in accordance with the Norm, which is the coding standard of the school.
