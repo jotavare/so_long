@@ -81,6 +81,7 @@ make or make bonus
 #### MAP
 * The map should include 3 components to be constructed: walls, collectibles and free space.
 * Should be composed of only these 5 characters:
+
 | Characters | Description |
 | :--: | :--: |
 | `0` | Empty space.              |
@@ -88,6 +89,7 @@ make or make bonus
 | `C` | Collectible.              |
 | `E` | Map exit.                 |
 | `P` | Player starting position. |
+
 * The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
 ```
 111111111111
