@@ -77,13 +77,26 @@ make or make bonus
 
 #### MAP
 * The map should include 3 components to be constructed: walls, collectibles and free space.
-
 * Should be composed of only these 5 characters:
-* `0` - Empty space.
-* `1` - Wall.
-* `C` - Collectible.
-* `E` - Map exit.
-* `P` - Player starting position.
+
+	* `0` - Empty space.
+	* `1` - Wall.
+	* `C` - Collectible.
+	* `E` - Map exit.
+	* `P` - Player starting position.
+* The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
+```
+111111111111
+1001000000C1
+100000011101
+1P0011E00001
+111111111111
+```
+* Map must be rectangular.
+* Map must be closed/surrounded by walls. If not, the program should return and error.
+* Check if there is a valid path in the map.
+* The program must be able to parse any kind of map, as long it respects the rules.
+* If a error/misconfiguration is encountered, it should return "Error\n" followed by a message.
 
 ## BONUS
 * Develop original extra features (optional).
