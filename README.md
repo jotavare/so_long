@@ -58,7 +58,7 @@ make or make bonus
 
 `make fclean`  - Delete all .o (object files) and .a (executable) files.
 
-`make re` - use rules `fclean` + `all`.
+`make re` - Use rules `fclean` + `all`.
 
 ## MANDATORY
 - [x] Must use MiniLibX.
