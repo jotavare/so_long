@@ -63,7 +63,7 @@ make or make bonus
 * The program has to take a map description file ending with `.ber` extension.
 
 #### GAME
-* Goal: collect every collectible and escape chosing the shortest route.
+* **Goal:** collect every collectible and escape chosing the shortest route.
 * `W` `A` `S` `D` keys must be used to move the main character `up` `down` `left` `right`.
 * Cant move into walls.
 * Number of movements must be displayed in the shell.
