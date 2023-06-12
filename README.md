@@ -79,7 +79,7 @@ make or make bonus
 - [x] Clicking on the window cross must also close and quit the program in a clean way.
 - [x] The use of the images of the MiniLibx is mandatory.
 
-#### MAP
+#### MAP COMPONENTS
 - [x] The map should include 3 components to be constructed: walls, collectibles and free space.
 - [x] Should be composed of only these 5 characters:
 
@@ -91,6 +91,7 @@ make or make bonus
 | `E` | Map exit.                 |
 | `P` | Player starting position. |
 
+#### MAP VALIDATION
 - [x] The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
 - [x] Map must be rectangular.
 - [x] Map must be closed/surrounded by walls. If not, the program should return an error.
