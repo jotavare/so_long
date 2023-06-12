@@ -91,6 +91,12 @@ make or make bonus
 | `P` | Player starting position. |
 
 * The map must contain 1 exit, at least 1 collectible, and 1 starting position to be valid.
+* Map must be rectangular.
+* Map must be closed/surrounded by walls. If not, the program should return an error.
+* Check if there is a valid path in the map.
+* The program must be able to parse any kind of map, as long it respects the rules.
+* If a error/misconfiguration is encountered, it should return `Error\n` followed by a message.
+
 ```
 111111111111
 1001000000C1
@@ -98,11 +104,6 @@ make or make bonus
 1P0011E00001
 111111111111
 ```
-* Map must be rectangular.
-* Map must be closed/surrounded by walls. If not, the program should return an error.
-* Check if there is a valid path in the map.
-* The program must be able to parse any kind of map, as long it respects the rules.
-* If a error/misconfiguration is encountered, it should return `Error\n` followed by a message.
 
 ## BONUS
 * Develop original extra features (optional).
