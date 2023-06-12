@@ -61,9 +61,9 @@ make or make bonus
 `make re` - use rules `fclean` + `all`.
 
 ## MANDATORY
-[x] Must use MiniLibX.
-[x] Makefile must compile source files and should not relink.
-[x] The program has to take as parameter a map description file ending with `.ber` extension.
+- [x] Must use MiniLibX.
+- [x] Makefile must compile source files and should not relink.
+- [x] The program has to take as parameter a map description file ending with `.ber` extension.
 
 #### GAME
 * **Goal:** collect every collectible and escape chosing the shortest route.
