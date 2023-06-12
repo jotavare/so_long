@@ -48,11 +48,11 @@ make or make bonus
 
 #### MAKEFILE RULES
 
-`make` - Compile so_long.
+`make` - Compile so_long files.
 
-`make bonus` - Compile so_long_bonus.
+`make bonus` - Compile so_long_bonus files.
 
-`make all`  - Compile mandatory + bonus.
+`make all`  - Compile mandatory + bonus files.
 
 `make clean`  - Delete all .o (object files) files.
 
