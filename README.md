@@ -71,7 +71,7 @@ make or make bonus
 
 #### GRAPHIC MANAGMENT
 * Display the image in a window and must remain smooth.
-* Pressing `ESC` must close the window and quite the program in a clean way.
+* Pressing `ESC` must close the window and quit the program in a clean way.
 * Clicking on the windows cross should do the same behavior as `ESC`.
 * The use of the imagges of the MiniLibx is mandatory.
 
