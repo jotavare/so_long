@@ -34,7 +34,7 @@ It is created using the minilibx library and requires students to implement game
 git clone git@github.com:jotavare/so_long.git
 ```
 #### 2º - Enter the project folder and run `make` or `make bonus`
-> To run the program, you need to download the MiniLibX and include inside the so_long folder.
+> Important: to run the program, you need to download the MiniLibX and include inside the so_long folder.
 ```bash
 cd so_long/so_long
 make or make bonus
