@@ -98,7 +98,7 @@ make or make bonus
 - [x] The program must be able to parse any kind of map, as long it respects the rules.
 - [x] If an error/misconfiguration is encountered, it should return `Error\n` followed by an explicit message.
 
-Map `.ber` example:
+> Map `.ber` example:
 ```
 111111111111
 1001000000C1
