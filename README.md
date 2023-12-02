@@ -27,7 +27,6 @@ This is a 2D game where the player navigates through a maze-like environment to 
 <a href="https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
 
 ## HOW TO USE
-#### COMPILATION AND EXECUTION
 #### 1º - Clone the repository
 ```bash
 git clone git@github.com:jotavare/so_long.git
