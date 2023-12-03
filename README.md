@@ -22,13 +22,12 @@
 </p>
 
 ## ABOUT
-The so_long project is a 2D game where the player navigates through a maze-like environment, avoiding obstacles and enemies to reach a goal.
-It is created using the MiniLibX library and requires students to implement game mechanics, file input/output, and basic graphics.
+This is a 2D game where the player navigates through a maze-like environment to reach a goal, avoiding obstacles and enemies. It is created using the MiniLibX library and I had to implement game mechanics, file input/output, and basic graphics.
 
-<a href="https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
+- [Subject](https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf) `PDF`
+- [References](https://github.com/jotavare/42-resources#02-so_long) `GitHub`
 
 ## HOW TO USE
-#### COMPILATION AND EXECUTION
 #### 1º - Clone the repository
 ```bash
 git clone git@github.com:jotavare/so_long.git
@@ -75,8 +74,8 @@ make or make bonus
 
 #### GRAPHIC MANAGEMENT
 - [x] Display the image in a window and must remain smooth (changing windows, minimizing, ...).
-- [x] Pressing `ESC` must close the window and quit the program in a clean way.
-- [x] Clicking on the window cross must also close and quit the program in a clean way.
+- [x] Pressing `ESC` must close the window and cleanly quit the program.
+- [x] Clicking on the window cross must also close and quit the program cleanly.
 - [x] The use of the images of the MiniLibx is mandatory.
 
 #### MAP COMPONENTS
@@ -99,7 +98,7 @@ make or make bonus
 - [x] The program must be able to parse any kind of map, as long it respects the rules.
 - [x] If an error/misconfiguration is encountered, it should return `Error\n` followed by an explicit message.
 
-Map `.ber` example:
+> Map `.ber` example:
 ```
 111111111111
 1001000000C1
