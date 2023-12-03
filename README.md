@@ -24,7 +24,8 @@
 ## ABOUT
 This is a 2D game where the player navigates through a maze-like environment to reach a goal, avoiding obstacles and enemies. It is created using the MiniLibX library and I had to implement game mechanics, file input/output, and basic graphics.
 
-<a href="https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf">Click here</a> for the subject of this project.
+- [Subject](https://github.com/jotavare/so_long/blob/master/subject/en_subject_so_long.pdf) `PDF`
+- [References](https://github.com/jotavare/42-resources#02-so_long) `GitHub`
 
 ## HOW TO USE
 #### 1º - Clone the repository
