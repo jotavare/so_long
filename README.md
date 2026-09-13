@@ -26,6 +26,9 @@
 ## ABOUT
 This is a 2D game where the player navigates through a maze-like environment to reach a goal, avoiding obstacles and enemies. It is created using the MiniLibX library and I had to implement game mechanics, file input/output, and basic graphics.
 
+> [!NOTE]
+> For the rest of the projects and exams in the cursus, <a href="https://github.com/jotavare/42-common-core">click here</a>.
+
 ## HOW TO USE
 #### 1º - Clone the repository
 ```bash
