@@ -29,6 +29,8 @@ void	map_height(t_root *root, char *file)
 			free(file);
 			root_destroy(root, "Map is invalid!", 0);
 		}
+		if (file[i + j] == 0)
+			break ;
 		i += root->game->width + 1;
 		root->game->height++;
 	}

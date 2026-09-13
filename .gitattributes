@@ -1,12 +1,9 @@
-# Normalise to LF in the repository. These files were once edited on Windows
-# and came back with CRLF, which nothing here needs.
+# Keep everything in the repository as LF, whatever the checkout platform.
 * text=auto eol=lf
 
 # Maps are program input, read byte by byte by the parser: keep them LF so a
 # stray carriage return is never mistaken for a tile.
 *.ber text eol=lf
 
-# Binary, never touched.
+# Textures are XPM, which is C source in form but must not be reflowed.
 *.xpm -text
-*.png binary
-*.pdf binary

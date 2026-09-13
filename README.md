@@ -123,8 +123,8 @@ make bonus  # bonus
 
 ## BONUS
 - [x] Develop original extra features (optional).
-- [x] Make the player lose when they touch an enemy patrol.
-- [x] Add sprite animation.
+- [x] Make the player lose when they touch an enemy.
+- [ ] Add sprite animation.
 - [x] Display the movement count directly on the screen, instead of writing in the shell.
 
 ## NORMINETTE
