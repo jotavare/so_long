@@ -1,3 +1,25 @@
+# Build output.
+*.o
+*.a
 *.out
-*.pdf
+so_long/so_long
+so_long/so_long_bonus
+
+# minilibx is cloned in by the user, not vendored here.
+so_long/mlx/
+
+# Editor and OS droppings.
+.vscode/
+.idea/
 *.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Never commit credentials.
+.env
+.env.*
+*.pem
+*.key
+
+*.pdf

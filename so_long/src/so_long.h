@@ -20,8 +20,29 @@
 # include <string.h>
 # include <errno.h>
 # include <mlx.h>
-# include <mlx_int.h>
 # include "libft.h"
+
+/*
+** minilibx builds its images as a struct whose first members are the ones
+** below. mlx_get_pixel() and mlx_draw_pixel() write into that buffer directly,
+** so only this prefix has to be described here. Including <mlx_int.h> to get
+** the full definition is not an option: it redeclares mlx_new_image() and
+** mlx_get_color_value() with a concrete t_xvar * where <mlx.h> uses void *,
+** and the two prototypes do not agree.
+*/
+typedef struct s_img
+{
+	void			*image;
+	unsigned long	pix;
+	void			*gc;
+	int				size_line;
+	int				bpp;
+	int				width;
+	int				height;
+	int				type;
+	int				format;
+	char			*data;
+}				t_img;
 
 typedef struct s_coord
 {
@@ -67,7 +88,7 @@ void			draw(t_root *root);
 
 int				key_press(int keycode, t_root *root);
 int				key_release(int keycode, t_root *root);
-int				destroy_hook(int keycode, t_root *root);
+int				destroy_hook(t_root *root);
 
 void			game_destroy(t_game *game);
 

@@ -1,12 +1,13 @@
 NAME		=	so_long
 NAMEB		=	so_long_bonus
 CC			=	gcc
-FLAGS		=	-Wall -Wextra -Werror
+FLAGS		=	-Wall -Wextra -Werror -std=gnu17
+DEBUG		=
 MLX			=	mlx/Makefile.gen
 LFT			=	libft/libft.a
 INC			=	-I ./src -I ./libft -I ./mlx
 INCB		=	-I ./bonus -I ./libft -I ./mlx
-LIB			=	-L ./libft -lft -L ./mlx -lX11 -lXext -lm -lmlx -lbsd
+LIB			=	-L ./libft -lft -L ./mlx -lmlx -lXext -lX11 -lm -lbsd
 OBJ			=	$(SRC:.c=.o)
 OBJBONUS	=	$(SRCBONUS:.c=.o)
 GREEN		=	\033[0;32m
@@ -53,7 +54,7 @@ all:		$(MLX) $(LFT) $(NAME)
 
 $(NAME):	$(OBJ)
 			@echo "$(RED)[ .. ] Compiling Mandatory..$(RESET)"
-			@$(CC) $(FLAGS) -fsanitize=address -o $@ $^ $(LIB)
+			@$(CC) $(FLAGS) $(DEBUG) -o $@ $^ $(LIB)
 			@echo "$(GREEN)[ OK ]$(RESET) $(YELLOW)Mandatory Ready!$(RESET)"
 
 $(MLX):
@@ -70,14 +71,14 @@ bonus:		$(MLX) $(LFT) $(NAMEB)
 
 $(NAMEB):	$(OBJBONUS)
 			@echo "$(RED)[ .. ] Compiling Bonus..$(RESET)"
-			@$(CC) $(FLAGS) -fsanitize=address -o $@ $^ $(LIB)
+			@$(CC) $(FLAGS) $(DEBUG) -o $@ $^ $(LIB)
 			@echo "$(GREEN)[ OK ]$(RESET) $(YELLOW)Bonus Ready!$(RESET)"
 
 src/%.o:	src/%.c
-			@$(CC) $(FLAGS) $(INC) -o $@ -c $<
+			@$(CC) $(FLAGS) $(DEBUG) $(INC) -o $@ -c $<
 
 bonus/%.o:	bonus/%.c
-			@$(CC) $(FLAGS) $(INCB) -o $@ -c $<
+			@$(CC) $(FLAGS) $(DEBUG) $(INCB) -o $@ -c $<
 
 clean:
 			@make -s $@ -C libft
@@ -91,7 +92,10 @@ fclean:		clean
 			@rm -rf $(NAMEB)
 			@echo "Binary file removed."
 
+debug:		fclean
+			@$(MAKE) DEBUG="-g3 -fsanitize=address" all
+
 re:			fclean all
 re_b:			fclean bonus
 
-.PHONY:		all clean fclean re
+.PHONY:		all bonus clean fclean re re_b debug

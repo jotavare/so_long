@@ -42,9 +42,8 @@ int	key_release(int keycode, t_root *root)
 	return (0);
 }
 
-int	destroy_hook(int keycode, t_root *root)
+int	destroy_hook(t_root *root)
 {
-	(void)keycode;
 	(void)root;
 	root_destroy(0, 0, 0);
 	return (0);

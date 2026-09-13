@@ -18,6 +18,7 @@
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#norminette">Norminette</a> •
+	<a href="#debugging">Debugging</a> •
 	<a href="#contributing">Contributing</a> •
 	<a href="#license">License</a>
 </p>
@@ -30,14 +31,22 @@ This is a 2D game where the player navigates through a maze-like environment to 
 ```bash
 git clone git@github.com:jotavare/so_long.git
 ```
-#### 2º - Enter the project folder and run `make` or `make bonus`
-> **Important:** To run the program, you need to download the MiniLibX.
+#### 2º - Install the dependencies and clone MiniLibX into the project
+MiniLibX is not vendored here, so it has to be placed in `so_long/mlx` before
+building. On Debian or Ubuntu:
 ```bash
+sudo apt-get install -y build-essential libx11-dev libxext-dev libbsd-dev
 cd so_long/so_long
-make or make bonus
+git clone https://github.com/42Paris/minilibx-linux.git mlx
 ```
 
-#### 3º - Run the game with a map of your choice
+#### 3º - Run `make` or `make bonus`
+```bash
+make        # mandatory
+make bonus  # bonus
+```
+
+#### 4º - Run the game with a map of your choice
 ```bash
 ./so_long [map.ber]
 ./so_long_bonus [map_bonus.ber]
@@ -49,13 +58,17 @@ make or make bonus
 
 `make bonus` - Compile so_long_bonus files.
 
-`make all`  - Compile mandatory + bonus files.
+`make all`  - Same as `make`, compile mandatory files.
 
 `make clean`  - Delete all .o (object files) files.
 
 `make fclean`  - Delete all .o (object files) and .a (executable) files.
 
 `make re` - Use rules `fclean` + `all`.
+
+`make re_b` - Use rules `fclean` + `bonus`.
+
+`make debug` - Rebuild with `-g3 -fsanitize=address` for use with gdb and AddressSanitizer.
 
 ## MANDATORY
 - [x] Must use MiniLibX.
@@ -128,10 +141,28 @@ make or make bonus
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
+## DEBUGGING
+> The game allocates the map grid, the collectible list and one image per
+> texture, so every one of them has to be released before the window closes.
+
+Build with the sanitizer and debug symbols:
+
+```bash
+make debug
+```
+
+`gdb ./so_long maps/valid/mandatory/small.ber` - Step through map parsing and the render loop.
+
+`valgrind --leak-check=full ./so_long maps/valid/mandatory/small.ber` - Report anything the destroy path missed. MiniLibX keeps a few allocations of its own alive until `mlx_destroy_display()`, so a small still-reachable block from Xlib is expected.
+
+* [GDB](https://www.sourceware.org/gdb/) - The GNU debugger. `Website`
+* [Valgrind](https://valgrind.org/docs/manual/quick-start.html) - Quick start guide. `Website`
+
 ## CONTRIBUTING
 
-If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
+This repository documents work already submitted and graded, so it is not open
+to changes. Feel free to fork it if any of it is useful to you.
 
 ## LICENSE
 
-This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/so_long/blob/master/LICENSE) file.
+This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/so_long/blob/main/LICENSE) file.
