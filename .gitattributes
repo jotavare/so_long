@@ -1,0 +1,12 @@
+# Normalise to LF in the repository. These files were once edited on Windows
+# and came back with CRLF, which nothing here needs.
+* text=auto eol=lf
+
+# Maps are program input, read byte by byte by the parser: keep them LF so a
+# stray carriage return is never mistaken for a tile.
+*.ber text eol=lf
+
+# Binary, never touched.
+*.xpm -text
+*.png binary
+*.pdf binary
